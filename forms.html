@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Forms Demo</title>
+  </head>
+
+  <body>
+    <a href="/index.html">Anasayfa</a>
+    <h1>Forms Demo</h1>
+    <form action="/food">
+      <label for="username">Please enter your username:</label>
+      <input type="text" placeholder="Username" id="username" name="username" />
+
+      <label for="password">Please enter your password:</label>
+      <input type="password" placeholder="Password" id="password" />
+      <label for="color?">Pick your favourite color:</label>
+      <input type="color" placeholder="Color?" id="color?" />
+      <label for="age">Please enter your age:</label>
+      <input type="number" placeholder="Age" id="age" />
+      <label for="email">Please enter your email:</label>
+      <input type="email" name="" id="email" placeholder="E-mail" />
+      <button>Submit</button>
+    </form>
+    <hr />
+    <form action="https://www.reddit.com/search">
+      <label for="search">Search on Reddit:</label>
+      <input type="text" id="search" name="q" />
+      <button>Search</button>
+    </form>
+    <hr />
+    <form action="https://www.google.com/search">
+      <label for="search">Search on Google:</label>
+      <input type="text" id="search" name="q" />
+      <button>Search</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <label for="search">Search on Youtube:</label>
+      <input type="text" id="search" name="search_query" />
+      <button>Search</button>
+    </form>
+    <h2></h2>
+    <form action="/birds">
+      <input type="checkbox" name="tos" id="agree" />
+      <label for="agree">Agree</label>
+      <button>Submit</button>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <div>
+        <label for="animal">Pick an animal:</label>
+        <select name="animal" id="animal">
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="bird" selected>Bird</option>
+        </select>
+      </div>
+      <p>
+        <label for="amount">Amount of cheese at home:</label
+        ><input min="1" max="10" type="range" name="cheese" id="amount" />
+      </p>
+      <div>
+        <label for="complaint">Any complaints?</label><br />
+        <textarea
+          name="complaint"
+          id="complaint"
+          cols="30"
+          rows="20"
+          placeholder="Yes, Karen?"
+        ></textarea>
+      </div>
+      <button>Submit</button>
+    </form>
+    <h2>Validations</h2>
+    <form action="/spare">
+      <label for="first">First name</label>
+      <input
+        type="text"
+        name="first"
+        id="first"
+        required
+        minlength="5"
+        maxlength="99"
+      />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
