@@ -1,0 +1,28 @@
+#first-h1 {
+  color: #990b0b;
+}
+
+#mega {
+  color: #bdbdbd;
+}
+
+body {
+  background-color: rgb(28, 138, 57);
+}
+
+#first-list {
+  list-style-type: circle;
+  color: #eee8aadc;
+}
+
+#ordered-list {
+  color: #c0c0c0;
+}
+
+#monkas {
+  width: 150px;
+}
+
+#obi-wan {
+  width: 250px;
+}
